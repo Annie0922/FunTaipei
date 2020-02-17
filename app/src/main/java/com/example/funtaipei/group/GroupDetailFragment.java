@@ -58,7 +58,7 @@ public class GroupDetailFragment extends Fragment {
         activity.setTitle("旅遊團體內容");
         imageView = view.findViewById(R.id.imageView);
         tvName = view.findViewById(R.id.tvName);
-        tvDate = view.findViewById(R.id.tvDate);
+        tvDate = view.findViewById(R.id.edDate);
         tvGroupNo = view.findViewById(R.id.tvGroupNo);
         tvPeople = view.findViewById(R.id.tvPeople);
 

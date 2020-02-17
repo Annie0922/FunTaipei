@@ -26,7 +26,7 @@
     <string name="textNoPlacesFound">no place found</string>
     <string name="textDeleteSuccess">delete successfully</string>
     <string name="textNoCameraApp">no camera app found</string>
-    <string name="textNameIsInvalid">book name is invalid</string>
+    <string name="textNameIsInvalid">Member name is invalid</string>
     <string name="textInsertFail">insert fail</string>
     <string name="textInsertSuccess">insert successfully</string>
     <string name="textUpdateFail">update fail</string>
@@ -80,7 +80,7 @@
     <string name="textCan">取消</string>
     <string name="tab1">我的行程</string>
     <string name="tab2">我的旅遊點</string>
-
+    <string name="textNoMembersFound">找不到會員</string>
 
 
 </resources>

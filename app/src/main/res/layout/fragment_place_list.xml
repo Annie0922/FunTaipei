@@ -49,36 +49,36 @@
                 android:id="@+id/btView"
                 android:layout_width="96dp"
                 android:layout_height="46dp"
+                android:layout_below="@id/imageView2"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
+                android:background="@drawable/little_blue_button"
                 android:text="景點"
-                android:textColor="#00ffff"
-                android:layout_below="@id/imageView2"
-                android:background="@drawable/little_blue_button"/>
+                android:textColor="#000000" />
 
             <Button
                 android:id="@+id/btResturant"
                 android:layout_width="96dp"
                 android:layout_height="46dp"
+                android:layout_below="@id/imageView2"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
-                android:text="餐廳"
-                android:textColor="#00ffff"
-                android:layout_below="@id/imageView2"
                 android:layout_toRightOf="@id/btView"
-                android:background="@drawable/little_blue_button"/>
+                android:background="@drawable/little_blue_button"
+                android:text="餐廳"
+                android:textColor="#000000" />
 
             <Button
                 android:id="@+id/btHotel"
                 android:layout_width="96dp"
                 android:layout_height="46dp"
+                android:layout_below="@id/imageView2"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
-                android:textColor="#00ffff"
-                android:text="飯店"
-                android:layout_below="@id/imageView2"
                 android:layout_toRightOf="@id/btResturant"
-                android:background="@drawable/little_blue_button"/>
+                android:background="@drawable/little_blue_button"
+                android:text="飯店"
+                android:textColor="#000000" />
 
 
 

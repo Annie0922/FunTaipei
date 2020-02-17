@@ -15,6 +15,7 @@ import androidx.navigation.Navigation;
 
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -40,7 +41,7 @@ import java.util.Date;
 public class RegisterFragment extends Fragment {
     private final static String TAG = "TAG_RegisterFragment";
     private Activity activity;
-    private EditText etEmail, etPassword, etName;
+    private EditText edEmail, etPassword, etName;
     private TextView tvDate;
     private Button btOK, btBack,btDatePicker;
     private Date Date1;
@@ -69,7 +70,7 @@ public class RegisterFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @NonNull Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         final NavController navController = Navigation.findNavController(view);
-        etEmail = view.findViewById(R.id.edEmail);
+        edEmail = view.findViewById(R.id.edEmail);
         etPassword = view.findViewById(R.id.etPassword);
         etName = view.findViewById(R.id.etName);
         rgGender = view.findViewById(R.id.rgGender);
@@ -123,7 +124,7 @@ public class RegisterFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                String MB_EMAIL = etEmail.getText().toString();
+                String MB_EMAIL = edEmail.getText().toString();
                 if (MB_EMAIL.length() <= 0){
                     Common.showToast(activity, R.string.textEmailIsInvalid);
                     return;
@@ -156,7 +157,7 @@ public class RegisterFragment extends Fragment {
                     }
                 }
                 if(Common.networkConnected(activity)){
-                    String url = Common.URL_SERVER + "MemberServlet";
+                    String url = Common.URL_SERVER + "/MemberServlet";
                     Member member = new Member(0,MB_EMAIL,MB_PASSWORD,MB_NAME,MB_GENDER,MB_BIRTHDAY,1);
                     JsonObject jsonObject = new JsonObject();
                     jsonObject.addProperty("action","memberInsert");

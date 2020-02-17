@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.funtaipei.Common;
 import com.example.funtaipei.R;
@@ -33,6 +34,7 @@ public class LoginFragment extends Fragment {
     private Button btLogin,btRegister;
     private EditText etEmail,etPassword;
     private List<Member> members;
+    private TextView tvMsg;
     private CommonTask memberGetIdTask, loginTask;
 
     @Override
@@ -86,11 +88,11 @@ public class LoginFragment extends Fragment {
                     Common.showToast(getActivity(),R.string.textLoginFail);
                 }
                 //帳號空白
-//                if (account.isEmpty() || password.isEmpty()) {
+//                if (etEmail.length() <= 0 || etPassword.length() <= 0) {
 //                    tvMsg.setText("帳號和密碼不可空白");
 //                    return;
 //                }
-//                tvMsg.setText("");
+                //tvMsg.setText("");
                 //Navigation.findNavController(v).navigate((R.id.action_loginFragment_to_listviewFragment));
 
             }

@@ -12,7 +12,6 @@ public class Member implements Serializable {
     private Date Mb_birthday;
     private int Mb_status;
 
-
     public Member(int mb_no, String mb_email, String mb_password,  String mb_name, String mb_gender,
                   Date mb_birthday, int mb_status) {
         super();
@@ -82,4 +81,9 @@ public class Member implements Serializable {
         Mb_status = mb_status;
     }
 
+    public void setFields(String mb_name, String mb_gender, Date mb_birthday) {
+        this.Mb_name = mb_name;
+        this.Mb_gender = mb_gender;
+        this.Mb_birthday = mb_birthday;
+    }
 }

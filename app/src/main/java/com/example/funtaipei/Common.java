@@ -6,8 +6,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 public class Common {
     public static final String PREFERENCES_MEMBER = "member";
+    public static final Gson GSON = new GsonBuilder().setDateFormat("yyyy/MM/dd").create();
     //this is a appple
     public static String URL_SERVER = "http://10.0.2.2:8080/FunTaipei";
 //    public static String URL_SERVER = "http://10.0.2.2:8080/GP2System/";

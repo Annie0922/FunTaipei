@@ -5,7 +5,7 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#F5F5F5"
     tools:context=".place.RestaurantFragment">
 
 
@@ -43,10 +43,9 @@
                 android:layout_width="96dp"
                 android:layout_height="46dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:text="景點"
-                android:textColor="#00ffff"
                 android:background="@drawable/little_blue_button"
+                android:text="景點"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -55,10 +54,9 @@
                 android:layout_width="96dp"
                 android:layout_height="46dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:textColor="#00ffff"
                 android:background="@drawable/little_blue_button"
                 android:text="餐廳"
+                android:textColor="#000000"
                 app:layout_constraintStart_toEndOf="@+id/btView"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -67,10 +65,9 @@
                 android:layout_width="96dp"
                 android:layout_height="46dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginLeft="32dp"
-                android:textColor="#00ffff"
                 android:background="@drawable/little_blue_button"
                 android:text="飯店"
+                android:textColor="#000000"
                 app:layout_constraintStart_toEndOf="@+id/btResturant"
                 app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -85,7 +82,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvPlace"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+                android:layout_height="match_parent">
 
             </androidx.recyclerview.widget.RecyclerView>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
