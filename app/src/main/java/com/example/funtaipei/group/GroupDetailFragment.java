@@ -83,7 +83,7 @@ public class GroupDetailFragment extends Fragment {
     }
 
     private void showGroup() {
-        String url = Common.URL_SERVER + "GroupServlet";
+        String url = Common.URL_SERVER + "/GroupServlet";
         int id = group.getGP_ID();
         int imageSize = getResources().getDisplayMetrics().widthPixels/2;
         Bitmap bitmap = null;

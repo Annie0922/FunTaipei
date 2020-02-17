@@ -153,7 +153,7 @@ public class GroupInsertFragment extends Fragment {
 
                                     //String lower = "2";
                                     String notes = etNotes.getText().toString().trim();
-                                    String url = Common.URL_SERVER + "GroupServlet";
+                                    String url = Common.URL_SERVER + "/GroupServlet";
                                     Group group = new Group(0, 1238, name, 1, upper, 2, dateStart, dateEnd, eventDate, 1, notes, 10);
                                     JsonObject jsonObject = new JsonObject();
                                     jsonObject.addProperty("action", "groupInsert");
